@@ -1,4 +1,4 @@
-# MIB Artificial Intelligence Resource Project(MIB AIR)
+# react-scripts-bug
 
 ### How to Run?
 1. Clone the project
