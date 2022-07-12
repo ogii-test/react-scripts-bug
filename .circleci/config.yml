@@ -3,8 +3,12 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/node:12.13.1
+      - image: cimg/node:12.22.12-browsers #12.13.1
     steps:
       - checkout
-      - run: npm install
-      - run: npm start
+      - run: |
+          export DEBUG=*
+          npm install
+      - run: |
+          export DEBUG=*
+          npm start
