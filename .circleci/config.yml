@@ -11,3 +11,5 @@ jobs:
       - run: |
           export NODE_OPTIONS="--max-old-space-size=4092"
           npm start
+      - store_artifacts:
+          path: /home/circleci/.npm/_logs
