@@ -3,10 +3,11 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/node:16.16-browsers
+      - image: cimg/node:12.22.12-browsers
     steps:
       - checkout
       - run: |
-          npm install --verbose
+          npm install
       - run: |
-          npm start --verbose
+          export NODE_OPTIONS="--max-old-space-size=4092"
+          npm start
