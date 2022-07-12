@@ -7,8 +7,6 @@ jobs:
     steps:
       - checkout
       - run: |
-          export DEBUG=*
-          npm install
+          npm install --verbose
       - run: |
-          export DEBUG=*
           npm start
