@@ -3,10 +3,10 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/node:12.22.12-browsers #12.13.1
+      - image: cimg/node:16.16-browsers
     steps:
       - checkout
       - run: |
           npm install --verbose
       - run: |
-          npm start
+          npm start --verbose
